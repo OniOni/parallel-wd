@@ -19,10 +19,10 @@ var desired = [
 	, name: "This is an example test"
 	, browserName: "firefox"
 	, javascriptEnabled: true
-	, command, function(meth, path){
+	, command: function(meth, path){
 	    console.log(' > \x1b[33m%s\x1b[0m: %s', meth, path);
 	}
-	, status, function(info){
+	, status: function(info){
 	    console.log('\x1b[36m%s\x1b[0m', info);
 	}
     }
@@ -32,10 +32,10 @@ var desired = [
 	, name: "This is an example test"
 	, browserName: "chrome"
 	, javascriptEnabled: true
-	, command, function(meth, path){
+	, command: function(meth, path){
 	    console.log(' > \x1b[33m%s\x1b[0m: %s', meth, path);
 	}
-	, status, function(info){
+	, status: function(info){
 	    console.log('\x1b[36m%s\x1b[0m', info);
 	}
     }
