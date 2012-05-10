@@ -1,5 +1,3 @@
-// CONFIGURE SAUCE CREDENTIALS HERE !
-
 var p_webdriver;
 try {
   p_webdriver = require('wd-parallel');
@@ -29,9 +27,9 @@ browsers.test = function(browser, desired) {
 
 };
 
+//Load configuration file
 browsers.loadConfigFile("examples/config.json");
-console.log(browsers.desired);
-
+//Run test on all browsers
 browsers.run();
 
 
