@@ -1,21 +1,25 @@
 { 
     "name" : "wd-parallel"
-  , "description" : "WebDriver/Selenium 2 node.js client"
-  , "tags" : ["web", "automation", "browser", "parallel", "javascript"]
-  , "version" : "0.0.1"
-  , "author" : "Mathieu Sabourin <mathieu.c.sabourin@gmail.com>"
-  , "repository" :
-    { "type" : "git"
-    , "url" : ""
+    , "description" : "WebDriver/Selenium 2 node.js client"
+    , "tags" : ["web", "automation", "browser", "parallel", "javascript"]
+    , "version" : "0.0.1"
+    , "author" : "Mathieu Sabourin <mathieu.c.sabourin@gmail.com>"
+    , "repository" : { 
+	"type" : "git"
+	, "url" : "https://OniOni@github.com/OniOni/parallel-wd.git"
     }
-  , "bugs" :
-    { "url" : "" }
-  , "engines" : ["node"]
-  , "main" : "./lib/main"
-  , "bin" : { "wd-parallel" : "./lib/bin.js" }
-  , "directories" : { "lib" : "./lib" }
-  , "devDependencies" : {
-    "nodeunit" : "latest"
-    ,"wd-sync": "latest"
-  }
+    , "bugs" : { 
+	"url" : "https://github.com/OniOni/parallel-wd/issues" 
+    }
+    , "engines" : ["node"]
+    , "main" : "./lib/main"
+    , "directories" : { "lib" : "./lib" }
+    , "dependencies" : {
+	"nodeunit" : "latest"
+	,"wd-sync": "latest"
+    }
+    , "devDependencies" : {
+	"nodeunit" : "latest"
+	,"wd-sync": "latest"
+    }
 }
