@@ -5,7 +5,10 @@
 http://nodejs.org/#download
 
 ## Install
-...
+
+```shell
+npm install wd-parallel
+```
 
 ## Authors
 
@@ -14,10 +17,6 @@ http://nodejs.org/#download
 ## License
 
   * License - Apache 2: http://www.apache.org/licenses/LICENSE-2.0
-
-## Usage
-...
-
 
 ## Writing a test!
 
