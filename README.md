@@ -22,26 +22,26 @@ npm install wd-parallel
 
 Start by importing the required library.
 
-<pre>
+```javascript
 try {
   p_webdriver = require('wd-parallel');
 } catch( err ) { 
   p_webdriver = require('../lib/main');
 }
-</pre>
+```
 
 Then create a default multiple browser object.
 
-<pre>
+```javascript
 var browsers = p_webdriver.remote();
-</pre>
+```
 
 Now add a test method to the multiple browser object. This method needs to arguments named browser and desired.
 
   * This method contains your test logic.
   * Test should be run as if to be run on an object named browser.
 
-<pre>
+```javascript
 browsers.test = function(browser, desired) {
 
     console.log("server status:", browser.status());
@@ -61,21 +61,21 @@ browsers.test = function(browser, desired) {
     browser.quit();
 
 };
-</pre>
+```
 
 Load the configuration for all your browsers from your configuration file.
 
-<pre>
+```javascript
 //Load configuration file
 browsers.loadConfigFile("examples/config.json");
-</pre>
+```
 
 Now you can go ahead and run the test !
 
-<pre>
+```javascript
 //Run test on all browsers
 browsers.run();
-</pre>
+```
 
 ## Supported Methods
 This uses <a href='https://github.com/sebv/node-wd-sync'>node-wd-sync</a> written by <a href='https://github.com/sebv'>sebv</a> so you can check <a href='https://github.com/sebv/node-wd-sync'>this</a> page on supported methods.
